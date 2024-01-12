@@ -29,12 +29,12 @@ describe('DOM', () => {
 	});
 
 	it('should have a number type of card image width and height attribute values', () => {
-		const cardImageEl = document.querySelector('.card__image img');
-		const cardImageWidth = parseInt(cardImageEl.getAttribute('width'));
-		const cardImageHeight = parseInt(cardImageEl.getAttribute('height'));
+		const cardImgEl = document.querySelector('.card__image img');
+		const cardImgWidth = parseInt(cardImgEl.getAttribute('width'));
+		const cardImgHeight = parseInt(cardImgEl.getAttribute('height'));
 
-		expect(cardImageWidth).to.be.a('number');
-		expect(cardImageHeight).to.be.a('number');
+		expect(cardImgWidth).to.be.a('number');
+		expect(cardImgHeight).to.be.a('number');
 	});
 
 	it("should have an author name element that contains 'Michelle Appleton' word", () => {
@@ -46,15 +46,15 @@ describe('DOM', () => {
 
 	it('should have two children inside of the article element', () => {
 		const articleEl = document.querySelector('article');
-		const articleChildrenElements = articleEl.children;
+		const articleChildrenEls = articleEl.children;
 
-		expect(articleChildrenElements).to.have.lengthOf(2);
+		expect(articleChildrenEls).to.have.lengthOf(2);
 	});
 
 	it('should have an empty alt attribute value of card image element', () => {
-		const cardImageEl = document.querySelector('.card__image img');
-		const cardImageAlt = cardImageEl.getAttribute('alt');
+		const cardImgEl = document.querySelector('.card__image img');
+		const cardImgAlt = cardImgEl.getAttribute('alt');
 
-		expect(cardImageAlt).to.be.empty;
+		expect(cardImgAlt).to.be.empty;
 	});
 });
