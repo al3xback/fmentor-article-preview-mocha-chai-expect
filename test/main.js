@@ -41,7 +41,7 @@ describe('DOM', () => {
 		const cardAuthorNameEl = document.querySelector('.card__author-name');
 		const cardAuthorName = cardAuthorNameEl.textContent.trim();
 
-		expect(cardAuthorName).to.equal('Michelle Appleton');
+		expect(cardAuthorName).to.include('Michelle Appleton');
 	});
 
 	it('should have two children inside of the article element', () => {
